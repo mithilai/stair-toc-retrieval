@@ -1,5 +1,9 @@
 # STAIR: an open reimplementation
 
+[![Read the write-up](https://img.shields.io/badge/Medium-read%20the%20write--up-black?logo=medium)](https://medium.com/@mithilmaske/i-built-stair-from-scratch-a-retriever-that-returns-section-names-not-chunk-ids-22882a7b4cd8)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
 A from-scratch implementation of **STAIR (STructure Aware Information Retriever)**, a generative retrieval method that uses a document's **table of contents** as the document identifier instead of chunking the text.
 
 Instead of returning `chunk_0417`, it returns `"Brain Cells: Neurons"`.
@@ -39,6 +43,8 @@ There is no vector database. The index lives in the model's weights, and a trie 
 ---
 
 **Paper:** [arXiv:2609.03874](https://arxiv.org/abs/2609.03874) by Vineet Kumar, Meghanadh Pulivarthi, Vishwajeet Kumar, Jaydeep Sen, Riyaz Ahmad Bhat and Sachindra Joshi, IBM Research. The method is theirs. Any shortfall in this implementation is mine.
+
+**Write-up:** [I Built STAIR From Scratch: A Retriever That Returns Section Names, Not Chunk IDs](https://medium.com/@mithilmaske/i-built-stair-from-scratch-a-retriever-that-returns-section-names-not-chunk-ids-22882a7b4cd8) covers the reasoning behind the design, what the numbers mean, and the mistakes worth avoiding if you build on this.
 
 ---
 
@@ -189,6 +195,15 @@ Covers the pure logic: ToC tree construction and span assignment, trie traversal
 - **One book evaluated.** The ToC findings need a second book and domain to be solid.
 - **Four epochs, not 200.** R@3 was still climbing when training stopped.
 - **Retraining on corpus change.** The index is the weights, so adding a document means training again. This is inherent to DSI, and it is the main reason to prefer a vector store for anything that changes.
+
+## Read more
+
+The full write-up, including the benchmark audit, the significance testing that
+caught a false finding, and the cost comparison against BM25:
+**[I Built STAIR From Scratch](https://medium.com/@mithilmaske/i-built-stair-from-scratch-a-retriever-that-returns-section-names-not-chunk-ids-22882a7b4cd8)**.
+
+If you run this at the paper's full training budget, I would genuinely like to
+know what you get. Open an issue.
 
 ## License
 
