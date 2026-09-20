@@ -1,0 +1,127 @@
+{
+  "book": "whole-child",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "queries_evaluated": 610,
+  "published_test_size": 689,
+  "orphans": 79,
+  "note": "not comparable to the paper; community subset",
+  "metrics": {
+    "BM25": {
+      "n_queries": 610,
+      "R@1": 78.36,
+      "R@3": 93.28,
+      "nDCG@3": 87.3,
+      "answered": 610,
+      "hallucination_rate": 0.0,
+      "R@1_all": 69.38,
+      "R@3_all": 82.58,
+      "nDCG@3_all": 77.29
+    },
+    "STAIR": {
+      "n_queries": 610,
+      "R@1": 38.52,
+      "R@3": 58.69,
+      "nDCG@3": 50.22,
+      "answered": 610,
+      "hallucination_rate": 0.0,
+      "R@1_all": 34.1,
+      "R@3_all": 51.96,
+      "nDCG@3_all": 44.46
+    },
+    "no-ToC": {
+      "n_queries": 610,
+      "R@1": 38.03,
+      "R@3": 53.11,
+      "nDCG@3": 46.69,
+      "answered": 610,
+      "hallucination_rate": 0.0,
+      "R@1_all": 33.67,
+      "R@3_all": 47.02,
+      "nDCG@3_all": 41.34
+    }
+  },
+  "significance": {
+    "R@1": [
+      {
+        "a": "BM25",
+        "b": "STAIR",
+        "k": 1,
+        "mean_a": 78.36,
+        "mean_b": 38.52,
+        "observed_diff": 39.84,
+        "p_value": 0.0001,
+        "significant": true,
+        "n_queries": 610,
+        "n_discordant": 303,
+        "n_iter": 10000
+      },
+      {
+        "a": "BM25",
+        "b": "no-ToC",
+        "k": 1,
+        "mean_a": 78.36,
+        "mean_b": 38.03,
+        "observed_diff": 40.33,
+        "p_value": 0.0001,
+        "significant": true,
+        "n_queries": 610,
+        "n_discordant": 312,
+        "n_iter": 10000
+      },
+      {
+        "a": "STAIR",
+        "b": "no-ToC",
+        "k": 1,
+        "mean_a": 38.52,
+        "mean_b": 38.03,
+        "observed_diff": 0.49,
+        "p_value": 0.856,
+        "significant": false,
+        "n_queries": 610,
+        "n_discordant": 125,
+        "n_iter": 10000
+      }
+    ],
+    "R@3": [
+      {
+        "a": "BM25",
+        "b": "STAIR",
+        "k": 3,
+        "mean_a": 93.28,
+        "mean_b": 58.69,
+        "observed_diff": 34.59,
+        "p_value": 0.0001,
+        "significant": true,
+        "n_queries": 610,
+        "n_discordant": 245,
+        "n_iter": 10000
+      },
+      {
+        "a": "BM25",
+        "b": "no-ToC",
+        "k": 3,
+        "mean_a": 93.28,
+        "mean_b": 53.11,
+        "observed_diff": 40.16,
+        "p_value": 0.0001,
+        "significant": true,
+        "n_queries": 610,
+        "n_discordant": 277,
+        "n_iter": 10000
+      },
+      {
+        "a": "STAIR",
+        "b": "no-ToC",
+        "k": 3,
+        "mean_a": 58.69,
+        "mean_b": 53.11,
+        "observed_diff": 5.57,
+        "p_value": 0.0025,
+        "significant": true,
+        "n_queries": 610,
+        "n_discordant": 116,
+        "n_iter": 10000
+      }
+    ]
+  }
+}

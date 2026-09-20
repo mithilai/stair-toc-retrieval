@@ -1,0 +1,35 @@
+[project]
+name = "stair"
+version = "0.1.0"
+description = "An open reimplementation of STAIR: structure-aware generative retrieval over document tables of contents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+keywords = [
+    "stair", "generative-retrieval", "differentiable-search-index", "dsi",
+    "rag", "retrieval-augmented-generation", "information-retrieval",
+    "constrained-decoding", "qlora",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]

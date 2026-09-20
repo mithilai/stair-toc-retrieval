@@ -1,0 +1,55 @@
+{
+  "book": "whole-child",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "queries": 200,
+  "metrics": {
+    "BM25": {
+      "n_queries": 200,
+      "R@1": 83.5,
+      "R@3": 96.5,
+      "nDCG@3": 91.44,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    },
+    "zeroshot+ToC": {
+      "n_queries": 200,
+      "R@1": 11.5,
+      "R@3": 22.0,
+      "nDCG@3": 17.67,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    },
+    "zeroshot-noToC": {
+      "n_queries": 200,
+      "R@1": 2.5,
+      "R@3": 5.5,
+      "nDCG@3": 4.33,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    },
+    "trained-BM25(0.5B)": {
+      "n_queries": 200,
+      "R@1": 83.5,
+      "R@3": 96.5,
+      "nDCG@3": 91.44,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    },
+    "trained-STAIR(0.5B)": {
+      "n_queries": 200,
+      "R@1": 43.5,
+      "R@3": 63.5,
+      "nDCG@3": 54.94,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    },
+    "trained-no-ToC(0.5B)": {
+      "n_queries": 200,
+      "R@1": 42.5,
+      "R@3": 60.5,
+      "nDCG@3": 52.87,
+      "answered": 200,
+      "hallucination_rate": 0.0
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "note": "answerable = orphan-gold queries excluded; all = counted as failures",
+  "books": {
+    "digitalage": {
+      "answerable": {
+        "n_queries": 2280,
+        "R@1": 65.79,
+        "R@3": 83.29,
+        "nDCG@3": 76.09,
+        "answered": 2280,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 21,
+      "test_total": 2301,
+      "R@1_all": 65.19
+    },
+    "openmusictheory": {
+      "answerable": {
+        "n_queries": 3244,
+        "R@1": 59.68,
+        "R@3": 74.54,
+        "nDCG@3": 68.53,
+        "answered": 3244,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 173,
+      "test_total": 3417,
+      "R@1_all": 56.66
+    },
+    "whole-child": {
+      "answerable": {
+        "n_queries": 610,
+        "R@1": 78.36,
+        "R@3": 93.28,
+        "nDCG@3": 87.3,
+        "answered": 610,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 79,
+      "test_total": 689,
+      "R@1_all": 69.38
+    },
+    "auralskills": {
+      "answerable": {
+        "n_queries": 980,
+        "R@1": 63.16,
+        "R@3": 79.59,
+        "nDCG@3": 72.82,
+        "answered": 980,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 87,
+      "test_total": 1067,
+      "R@1_all": 58.01
+    },
+    "behavioralecon": {
+      "answerable": {
+        "n_queries": 1233,
+        "R@1": 78.91,
+        "R@3": 91.32,
+        "nDCG@3": 86.33,
+        "answered": 1233,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 21,
+      "test_total": 1254,
+      "R@1_all": 77.59
+    },
+    "compgov": {
+      "answerable": {
+        "n_queries": 487,
+        "R@1": 60.78,
+        "R@3": 76.18,
+        "nDCG@3": 69.82,
+        "answered": 487,
+        "hallucination_rate": 0.0
+      },
+      "orphans": 136,
+      "test_total": 623,
+      "R@1_all": 47.51
+    }
+  },
+  "macro_R@1_answerable": 67.78,
+  "macro_R@1_all": 62.39
+}

@@ -1,0 +1,63 @@
+# Source books — large, expensive to move, and licence-restricted.
+# The folder's README is tracked; not one byte of the books is.
+books_AI/*
+!books_AI/README.md
+books/
+*.epub
+*.mobi
+*.azw3
+*.pdf
+
+# Datasets, caches, model weights
+data/
+checkpoints/
+runs/
+outputs/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+.cache/
+hf_cache/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# Local env / secrets — the example template IS tracked, the real key is not
+.env
+.env.*
+!.env.example
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Throwaway venv for CPU-only tooling, kept separate from .venv
+.venv-tools/
+
+# Training logs are kept — they are the record of what happened
+!logs/
+!logs/*.log
+!logs/*.jsonl
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Private working documents: not part of the public code repo.
+# (git does not support trailing comments on a pattern line)
+BLOG.md
+HURDLES.md
+CLAUDE.md
+PROJECT.md
+RESUME.md
+blog/
+logs/

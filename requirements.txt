@@ -1,0 +1,24 @@
+# Install torch separately first, matched to your GPU. For Blackwell (sm_120)
+# you need torch >= 2.7 on the cu128 index:
+#   pip install torch==2.9.1+cu128 --extra-index-url https://download.pytorch.org/whl/cu128
+
+# Corpus and ToC extraction (the paper uses pymupdf, so we do too)
+pymupdf>=1.24
+
+# Benchmark loading
+huggingface-hub>=0.24
+datasets>=2.20
+
+# Baselines
+rank-bm25>=0.2.2
+
+# Training
+transformers>=4.44
+peft>=0.12
+accelerate>=0.33
+bitsandbytes>=0.43      # 4-bit QLoRA; ships a native Windows wheel
+safetensors>=0.4
+sentencepiece>=0.2
+
+# Tests
+pytest>=8.0
