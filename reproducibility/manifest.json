@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "repository": "https://github.com/mithilai/stair-toc-retrieval",
-  "base_commit": "15c48122bcea07d6f7ae2aa3041336cf73da7d6a",
+  "base_commit": "c30e0c833ec843688682d9d3d39eb4a9e29609bb",
   "snapshot": "Working files as packaged; may include changes after base_commit",
   "scope": "Code and experiment evidence from the community SearchTome subset",
   "manuscript_included": false,
@@ -27,9 +27,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 11609,
+      "bytes": 12072,
       "normalization": "lf",
-      "sha256": "b81b2f97a9efa0e847211379c4da6e1d1785fdb08c4262c31171c76bcc8c510c"
+      "sha256": "c8f505e9e8ae5c4331731ede5af1d7ea0f23690534778d9fb049e7ba03a6488c"
     },
     {
       "path": "checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/adapter_config.json",
@@ -135,9 +135,9 @@
     },
     {
       "path": "reproducibility/README.md",
-      "bytes": 5640,
+      "bytes": 5858,
       "normalization": "lf",
-      "sha256": "1012d243891f4f72f8636d77d484fb0250d833296fd13655dfd5798adbcb8ebe"
+      "sha256": "6384bcc63c563b716de984ecb83ed7d68feebb79f8de9143a3b1200b0e4be979"
     },
     {
       "path": "reproducibility/benchmark_snapshot.json",

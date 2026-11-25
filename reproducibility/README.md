@@ -5,8 +5,10 @@ This directory documents the saved measurements from the community
 implementation under a small training budget. They do not reproduce the
 original STAIR benchmark or its reported scores.
 
-The related manuscript, its PDF, and `video/` are kept local and excluded
-from the code-and-evidence archive.
+The accompanying report is available on Zenodo: Mithil Maske (2026),
+[Reconstructing STAIR Without Released Artifacts: A Small-Scale Reproduction and Benchmark Audit](https://doi.org/10.5281/zenodo.24539949).
+The report PDF, LaTeX source, and `video/` are excluded from this GitHub
+repository and the code-and-evidence archive.
 
 ## Verify the saved results
 

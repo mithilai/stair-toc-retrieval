@@ -1,5 +1,6 @@
 # STAIR: an open reimplementation
 
+[![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24539949.svg)](https://doi.org/10.5281/zenodo.24539949)
 [![Read the write-up](https://img.shields.io/badge/Medium-read%20the%20write--up-black?logo=medium)](https://medium.com/@mithilmaske/i-built-stair-from-scratch-a-retriever-that-returns-section-names-not-chunk-ids-22882a7b4cd8)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -42,7 +43,9 @@ There is no vector database. The index lives in the model's weights, and a trie 
 
 ---
 
-**Paper:** [arXiv:2609.03874](https://arxiv.org/abs/2609.03874) by Vineet Kumar, Meghanadh Pulivarthi, Vishwajeet Kumar, Jaydeep Sen, Riyaz Ahmad Bhat and Sachindra Joshi, IBM Research. The method is theirs. Any shortfall in this implementation is mine.
+**Original STAIR paper:** [arXiv:2609.03874](https://arxiv.org/abs/2609.03874) by Vineet Kumar, Meghanadh Pulivarthi, Vishwajeet Kumar, Jaydeep Sen, Riyaz Ahmad Bhat and Sachindra Joshi, IBM Research. The method is theirs. Any shortfall in this implementation is mine.
+
+**Reproduction report:** Mithil Maske (2026), [Reconstructing STAIR Without Released Artifacts: A Small-Scale Reproduction and Benchmark Audit](https://doi.org/10.5281/zenodo.24539949). Technical report, Zenodo. This report documents the independent implementation, benchmark audit, and small-scale measurements in this repository.
 
 **Write-up:** [I Built STAIR From Scratch: A Retriever That Returns Section Names, Not Chunk IDs](https://medium.com/@mithilmaske/i-built-stair-from-scratch-a-retriever-that-returns-section-names-not-chunk-ids-22882a7b4cd8) covers the reasoning behind the design, what the numbers mean, and the mistakes worth avoiding if you build on this.
 
