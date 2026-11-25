@@ -1,0 +1,109 @@
+=== [1/2] 7B test-set evaluation (610 queries, STAIR vs no-ToC vs BM25) ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [whole-child] 79 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 610 answerable queries
+published test split: 689, of which 79 (11.5%) have gold sections missing from the corpus
+
+BM25 done in 1s
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<02:30,  1.93it/s]Loading weights:   1%|          | 2/291 [00:00<01:59,  2.42it/s]Loading weights:   1%|1         | 4/291 [00:01<01:19,  3.59it/s]Loading weights:   2%|2         | 6/291 [00:01<00:57,  4.92it/s]Loading weights:   4%|4         | 13/291 [00:01<00:23, 11.59it/s]Loading weights:   5%|5         | 15/291 [00:02<00:28,  9.83it/s]Loading weights:   8%|7         | 22/291 [00:02<00:18, 14.64it/s]Loading weights:   8%|8         | 24/291 [00:02<00:21, 12.19it/s]Loading weights:  11%|#         | 31/291 [00:02<00:15, 16.39it/s]Loading weights:  11%|#1        | 33/291 [00:03<00:19, 13.41it/s]Loading weights:  14%|#3        | 40/291 [00:03<00:14, 16.99it/s]Loading weights:  14%|#4        | 42/291 [00:03<00:18, 13.76it/s]Loading weights:  17%|#6        | 49/291 [00:04<00:14, 16.72it/s]Loading weights:  18%|#7        | 51/291 [00:04<00:19, 12.53it/s]Loading weights:  20%|#9        | 58/291 [00:04<00:15, 15.45it/s]Loading weights:  21%|##        | 60/291 [00:05<00:18, 12.58it/s]Loading weights:  23%|##3       | 67/291 [00:05<00:14, 15.96it/s]Loading weights:  24%|##3       | 69/291 [00:05<00:17, 12.44it/s]Loading weights:  25%|##5       | 74/291 [00:05<00:12, 16.81it/s]Loading weights:  26%|##6       | 77/291 [00:06<00:15, 14.07it/s]Loading weights:  27%|##7       | 79/291 [00:06<00:14, 14.26it/s]Loading weights:  28%|##8       | 82/291 [00:06<00:12, 16.58it/s]Loading weights:  29%|##9       | 85/291 [00:06<00:11, 17.43it/s]Loading weights:  30%|###       | 88/291 [00:06<00:13, 15.51it/s]Loading weights:  32%|###2      | 94/291 [00:06<00:10, 19.50it/s]Loading weights:  33%|###3      | 97/291 [00:07<00:11, 16.63it/s]Loading weights:  35%|###5      | 103/291 [00:07<00:09, 19.53it/s]Loading weights:  36%|###6      | 106/291 [00:07<00:10, 16.98it/s]Loading weights:  38%|###8      | 112/291 [00:07<00:09, 19.60it/s]Loading weights:  40%|###9      | 115/291 [00:08<00:10, 17.26it/s]Loading weights:  42%|####1     | 121/291 [00:08<00:08, 19.96it/s]Loading weights:  43%|####2     | 124/291 [00:08<00:09, 17.73it/s]Loading weights:  45%|####4     | 130/291 [00:08<00:07, 20.35it/s]Loading weights:  46%|####5     | 133/291 [00:09<00:08, 17.67it/s]Loading weights:  48%|####7     | 139/291 [00:09<00:07, 19.87it/s]Loading weights:  49%|####8     | 142/291 [00:09<00:08, 17.05it/s]Loading weights:  51%|#####     | 148/291 [00:09<00:07, 19.84it/s]Loading weights:  52%|#####1    | 151/291 [00:10<00:07, 17.93it/s]Loading weights:  54%|#####3    | 157/291 [00:10<00:06, 20.55it/s]Loading weights:  55%|#####4    | 160/291 [00:10<00:07, 17.29it/s]Loading weights:  56%|#####6    | 164/291 [00:10<00:06, 20.35it/s]Loading weights:  57%|#####7    | 167/291 [00:11<00:07, 16.52it/s]Loading weights:  58%|#####8    | 169/291 [00:11<00:07, 15.98it/s]Loading weights:  60%|######    | 175/291 [00:11<00:06, 18.36it/s]Loading weights:  61%|######    | 177/291 [00:11<00:07, 14.77it/s]Loading weights:  63%|######3   | 184/291 [00:11<00:05, 19.08it/s]Loading weights:  64%|######3   | 186/291 [00:12<00:06, 15.25it/s]Loading weights:  66%|######5   | 191/291 [00:12<00:04, 20.21it/s]Loading weights:  67%|######6   | 194/291 [00:12<00:05, 16.19it/s]Loading weights:  68%|######7   | 197/291 [00:12<00:05, 16.70it/s]Loading weights:  69%|######8   | 200/291 [00:12<00:05, 17.87it/s]Loading weights:  70%|######9   | 203/291 [00:13<00:05, 15.67it/s]Loading weights:  70%|#######   | 205/291 [00:13<00:05, 15.30it/s]Loading weights:  73%|#######2  | 211/291 [00:13<00:04, 18.72it/s]Loading weights:  73%|#######3  | 213/291 [00:13<00:05, 14.23it/s]Loading weights:  76%|#######5  | 220/291 [00:14<00:03, 18.68it/s]Loading weights:  76%|#######6  | 222/291 [00:14<00:04, 14.75it/s]Loading weights:  79%|#######8  | 229/291 [00:14<00:03, 18.63it/s]Loading weights:  79%|#######9  | 231/291 [00:14<00:04, 14.74it/s]Loading weights:  82%|########1 | 238/291 [00:15<00:02, 19.42it/s]Loading weights:  83%|########2 | 241/291 [00:15<00:03, 16.44it/s]Loading weights:  85%|########4 | 247/291 [00:15<00:02, 18.74it/s]Loading weights:  86%|########5 | 249/291 [00:15<00:02, 14.79it/s]Loading weights:  88%|########7 | 256/291 [00:16<00:01, 18.78it/s]Loading weights:  89%|########8 | 258/291 [00:16<00:02, 14.97it/s]Loading weights:  91%|#########1| 265/291 [00:16<00:01, 19.01it/s]Loading weights:  92%|#########2| 268/291 [00:17<00:01, 15.59it/s]Loading weights:  93%|#########3| 271/291 [00:17<00:01, 17.26it/s]Loading weights:  94%|#########4| 274/291 [00:17<00:00, 18.07it/s]Loading weights:  95%|#########5| 277/291 [00:17<00:00, 15.32it/s]Loading weights:  97%|#########6| 281/291 [00:17<00:00, 18.97it/s]Loading weights:  98%|#########7| 284/291 [00:17<00:00, 15.32it/s]Loading weights:  98%|#########8| 286/291 [00:18<00:00, 15.21it/s]Loading weights: 100%|##########| 291/291 [00:18<00:00, 15.99it/s]
+  50/610
+  100/610
+  150/610
+  200/610
+  250/610
+  300/610
+  350/610
+  400/610
+  450/610
+  500/610
+  550/610
+  600/610
+STAIR done in 3612s |  VRAM 4.01/8.0 GB (peak 5.74)
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<02:07,  2.27it/s]Loading weights:   1%|          | 2/291 [00:00<01:46,  2.72it/s]Loading weights:   1%|1         | 4/291 [00:00<00:50,  5.64it/s]Loading weights:   2%|1         | 5/291 [00:01<00:45,  6.23it/s]Loading weights:   2%|2         | 6/291 [00:01<00:42,  6.77it/s]Loading weights:   4%|4         | 13/291 [00:01<00:16, 16.58it/s]Loading weights:   5%|5         | 15/291 [00:01<00:20, 13.56it/s]Loading weights:   8%|7         | 22/291 [00:01<00:13, 19.85it/s]Loading weights:   8%|8         | 24/291 [00:02<00:16, 15.82it/s]Loading weights:  11%|#         | 31/291 [00:02<00:12, 20.47it/s]Loading weights:  12%|#1        | 34/291 [00:02<00:14, 17.75it/s]Loading weights:  14%|#3        | 40/291 [00:02<00:12, 20.58it/s]Loading weights:  15%|#4        | 43/291 [00:03<00:14, 17.41it/s]Loading weights:  17%|#6        | 49/291 [00:03<00:12, 19.85it/s]Loading weights:  18%|#7        | 52/291 [00:03<00:13, 17.33it/s]Loading weights:  20%|#9        | 58/291 [00:03<00:11, 20.31it/s]Loading weights:  21%|##        | 61/291 [00:03<00:12, 18.11it/s]Loading weights:  23%|##3       | 67/291 [00:04<00:11, 20.34it/s]Loading weights:  24%|##4       | 70/291 [00:04<00:12, 17.51it/s]Loading weights:  26%|##6       | 76/291 [00:04<00:10, 20.39it/s]Loading weights:  27%|##7       | 79/291 [00:04<00:11, 17.78it/s]Loading weights:  29%|##9       | 85/291 [00:05<00:10, 19.85it/s]Loading weights:  30%|###       | 88/291 [00:05<00:12, 16.39it/s]Loading weights:  32%|###1      | 93/291 [00:05<00:09, 20.84it/s]Loading weights:  33%|###2      | 96/291 [00:06<00:13, 14.14it/s]Loading weights:  35%|###4      | 101/291 [00:06<00:10, 18.57it/s]Loading weights:  36%|###5      | 104/291 [00:06<00:12, 14.45it/s]Loading weights:  37%|###6      | 107/291 [00:06<00:12, 15.08it/s]Loading weights:  38%|###8      | 112/291 [00:06<00:12, 14.89it/s]Loading weights:  39%|###9      | 114/291 [00:07<00:14, 12.02it/s]Loading weights:  41%|####      | 118/291 [00:07<00:11, 15.51it/s]Loading weights:  42%|####1     | 121/291 [00:07<00:11, 15.12it/s]Loading weights:  42%|####2     | 123/291 [00:07<00:14, 11.39it/s]Loading weights:  44%|####3     | 127/291 [00:08<00:10, 14.95it/s]Loading weights:  45%|####4     | 130/291 [00:08<00:09, 16.30it/s]Loading weights:  46%|####5     | 133/291 [00:08<00:11, 13.68it/s]Loading weights:  47%|####7     | 137/291 [00:08<00:08, 17.42it/s]Loading weights:  48%|####8     | 140/291 [00:08<00:10, 13.93it/s]Loading weights:  49%|####8     | 142/291 [00:09<00:10, 13.80it/s]Loading weights:  50%|#####     | 146/291 [00:09<00:07, 18.21it/s]Loading weights:  51%|#####1    | 149/291 [00:09<00:10, 14.16it/s]Loading weights:  52%|#####1    | 151/291 [00:09<00:10, 13.96it/s]Loading weights:  54%|#####3    | 157/291 [00:09<00:07, 16.92it/s]Loading weights:  55%|#####4    | 159/291 [00:10<00:10, 12.53it/s]Loading weights:  57%|#####7    | 166/291 [00:10<00:07, 16.96it/s]Loading weights:  58%|#####7    | 168/291 [00:10<00:08, 13.73it/s]Loading weights:  60%|######    | 175/291 [00:11<00:06, 18.28it/s]Loading weights:  61%|######    | 177/291 [00:11<00:07, 14.44it/s]Loading weights:  63%|######3   | 184/291 [00:11<00:05, 18.15it/s]Loading weights:  64%|######3   | 186/291 [00:11<00:07, 14.38it/s]Loading weights:  66%|######6   | 193/291 [00:12<00:05, 17.97it/s]Loading weights:  67%|######7   | 195/291 [00:12<00:07, 13.42it/s]Loading weights:  68%|######8   | 199/291 [00:12<00:05, 16.22it/s]Loading weights:  69%|######9   | 202/291 [00:12<00:05, 16.98it/s]Loading weights:  70%|#######   | 204/291 [00:13<00:06, 13.17it/s]Loading weights:  72%|#######1  | 209/291 [00:13<00:04, 18.61it/s]Loading weights:  73%|#######2  | 212/291 [00:13<00:05, 15.06it/s]Loading weights:  74%|#######3  | 215/291 [00:13<00:04, 16.13it/s]Loading weights:  76%|#######5  | 220/291 [00:13<00:04, 17.10it/s]Loading weights:  77%|#######6  | 223/291 [00:14<00:04, 14.57it/s]Loading weights:  78%|#######8  | 227/291 [00:14<00:03, 18.33it/s]Loading weights:  79%|#######9  | 230/291 [00:14<00:04, 14.96it/s]Loading weights:  80%|#######9  | 232/291 [00:14<00:04, 13.66it/s]Loading weights:  82%|########1 | 238/291 [00:15<00:03, 15.95it/s]Loading weights:  82%|########2 | 240/291 [00:15<00:03, 13.51it/s]Loading weights:  84%|########3 | 244/291 [00:15<00:02, 17.32it/s]Loading weights:  85%|########4 | 247/291 [00:15<00:02, 17.24it/s]Loading weights:  86%|########5 | 250/291 [00:16<00:02, 14.58it/s]Loading weights:  88%|########7 | 256/291 [00:16<00:02, 16.97it/s]Loading weights:  89%|########8 | 258/291 [00:16<00:02, 13.13it/s]Loading weights:  90%|######### | 263/291 [00:16<00:01, 18.21it/s]Loading weights:  91%|#########1| 266/291 [00:17<00:01, 14.60it/s]Loading weights:  92%|#########2| 269/291 [00:17<00:01, 15.20it/s]Loading weights:  93%|#########3| 272/291 [00:17<00:01, 17.32it/s]Loading weights:  95%|#########4| 275/291 [00:17<00:01, 13.97it/s]Loading weights:  95%|#########5| 277/291 [00:17<00:01, 13.96it/s]Loading weights:  97%|#########7| 283/291 [00:18<00:00, 16.75it/s]Loading weights:  98%|#########7| 285/291 [00:18<00:00, 12.43it/s]Loading weights: 100%|#########9| 290/291 [00:18<00:00, 17.42it/s]Loading weights: 100%|##########| 291/291 [00:18<00:00, 15.70it/s]
+  50/610
+  100/610
+  150/610
+  200/610
+  250/610
+  300/610
+  350/610
+  400/610
+  450/610
+  500/610
+  550/610
+  600/610
+no-ToC done in 1831s |  VRAM 7.37/8.0 GB (peak 8.17)
+
+==============================================================
+ANSWERABLE ONLY
+==============================================================
+system |       R@1 |       R@3 |    nDCG@3 | hallucination_rate
+---------------------------------------------------------------
+BM25   |     78.36 |     93.28 |     87.30 |      0.00
+STAIR  |     38.52 |     58.69 |     50.22 |      0.00
+no-ToC |     38.03 |     53.11 |     46.69 |      0.00
+
+==============================================================
+SIGNIFICANCE — paired randomization test, R@1, 610 queries
+==============================================================
+
+@R@1:
+comparison                     diff        p  verdict
+--------------------------------------------------------------
+BM25 vs STAIR                +39.84   0.0001  SIGNIFICANT
+BM25 vs no-ToC               +40.33   0.0001  SIGNIFICANT
+STAIR vs no-ToC               +0.49   0.8560  not significant — consistent with noise
+
+@R@3:
+comparison                     diff        p  verdict
+--------------------------------------------------------------
+BM25 vs STAIR                +34.59   0.0001  SIGNIFICANT
+BM25 vs no-ToC               +40.16   0.0001  SIGNIFICANT
+STAIR vs no-ToC               +5.57   0.0025  SIGNIFICANT
+
+NOT comparable to the paper's SearchTome numbers.
+
+saved results/whole-child_test.json and whole-child_predictions.json
+=== [2/2] zero-training test ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [whole-child] 79 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 200 queries | model mistralai/Mistral-7B-Instruct-v0.2
+NO TRAINING — base weights only, constrained decoding on
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<02:29,  1.94it/s]Loading weights:   1%|          | 2/291 [00:00<01:50,  2.62it/s]Loading weights:   1%|1         | 4/291 [00:01<00:58,  4.89it/s]Loading weights:   2%|2         | 6/291 [00:01<00:44,  6.37it/s]Loading weights:   4%|4         | 13/291 [00:01<00:19, 14.38it/s]Loading weights:   5%|5         | 15/291 [00:01<00:22, 12.24it/s]Loading weights:   8%|7         | 22/291 [00:01<00:14, 18.09it/s]Loading weights:   8%|8         | 24/291 [00:02<00:17, 14.87it/s]Loading weights:  11%|#         | 31/291 [00:02<00:13, 19.78it/s]Loading weights:  12%|#1        | 34/291 [00:02<00:15, 16.77it/s]Loading weights:  14%|#3        | 40/291 [00:02<00:12, 19.68it/s]Loading weights:  15%|#4        | 43/291 [00:03<00:14, 17.22it/s]Loading weights:  17%|#6        | 49/291 [00:03<00:12, 19.84it/s]Loading weights:  18%|#7        | 52/291 [00:03<00:13, 17.63it/s]Loading weights:  20%|#9        | 58/291 [00:03<00:11, 19.93it/s]Loading weights:  21%|##        | 61/291 [00:04<00:13, 17.39it/s]Loading weights:  23%|##3       | 67/291 [00:04<00:11, 20.32it/s]Loading weights:  24%|##4       | 70/291 [00:04<00:12, 17.22it/s]Loading weights:  26%|##6       | 76/291 [00:04<00:10, 19.85it/s]Loading weights:  27%|##7       | 79/291 [00:05<00:11, 17.68it/s]Loading weights:  29%|##9       | 85/291 [00:05<00:10, 19.98it/s]Loading weights:  30%|###       | 88/291 [00:05<00:11, 17.41it/s]Loading weights:  32%|###2      | 94/291 [00:05<00:09, 20.16it/s]Loading weights:  33%|###3      | 97/291 [00:06<00:11, 17.42it/s]Loading weights:  35%|###5      | 103/291 [00:06<00:09, 20.19it/s]Loading weights:  36%|###6      | 106/291 [00:06<00:10, 17.53it/s]Loading weights:  38%|###8      | 112/291 [00:06<00:09, 19.71it/s]Loading weights:  40%|###9      | 115/291 [00:06<00:10, 17.26it/s]Loading weights:  42%|####1     | 121/291 [00:07<00:08, 20.15it/s]Loading weights:  43%|####2     | 124/291 [00:07<00:09, 17.62it/s]Loading weights:  45%|####4     | 130/291 [00:07<00:07, 20.27it/s]Loading weights:  46%|####5     | 133/291 [00:07<00:09, 17.52it/s]Loading weights:  48%|####7     | 139/291 [00:08<00:07, 19.83it/s]Loading weights:  49%|####8     | 142/291 [00:08<00:08, 17.31it/s]Loading weights:  51%|#####     | 148/291 [00:08<00:07, 20.04it/s]Loading weights:  52%|#####1    | 151/291 [00:08<00:08, 17.32it/s]Loading weights:  54%|#####3    | 157/291 [00:09<00:06, 20.25it/s]Loading weights:  55%|#####4    | 160/291 [00:09<00:07, 17.45it/s]Loading weights:  57%|#####7    | 166/291 [00:09<00:06, 20.21it/s]Loading weights:  58%|#####8    | 169/291 [00:09<00:06, 18.07it/s]Loading weights:  60%|######    | 175/291 [00:10<00:05, 20.82it/s]Loading weights:  61%|######1   | 178/291 [00:10<00:06, 18.49it/s]Loading weights:  63%|######3   | 184/291 [00:10<00:05, 20.80it/s]Loading weights:  64%|######4   | 187/291 [00:10<00:06, 17.10it/s]Loading weights:  66%|######5   | 191/291 [00:10<00:04, 20.39it/s]Loading weights:  67%|######6   | 194/291 [00:11<00:06, 15.80it/s]Loading weights:  67%|######7   | 196/291 [00:11<00:06, 15.43it/s]Loading weights:  69%|######8   | 200/291 [00:11<00:04, 19.39it/s]Loading weights:  70%|######9   | 203/291 [00:11<00:05, 15.04it/s]Loading weights:  70%|#######   | 205/291 [00:11<00:05, 14.80it/s]Loading weights:  73%|#######2  | 211/291 [00:12<00:04, 17.46it/s]Loading weights:  73%|#######3  | 213/291 [00:12<00:05, 13.74it/s]Loading weights:  75%|#######4  | 217/291 [00:12<00:04, 17.68it/s]Loading weights:  76%|#######5  | 220/291 [00:12<00:04, 17.26it/s]Loading weights:  77%|#######6  | 223/291 [00:13<00:05, 13.44it/s]Loading weights:  79%|#######8  | 229/291 [00:13<00:03, 16.34it/s]Loading weights:  79%|#######9  | 231/291 [00:13<00:04, 13.10it/s]Loading weights:  82%|########1 | 238/291 [00:13<00:03, 16.93it/s]Loading weights:  82%|########2 | 240/291 [00:14<00:03, 13.68it/s]Loading weights:  84%|########4 | 245/291 [00:14<00:02, 18.37it/s]Loading weights:  85%|########5 | 248/291 [00:14<00:02, 15.01it/s]Loading weights:  86%|########5 | 250/291 [00:14<00:02, 14.57it/s]Loading weights:  87%|########6 | 253/291 [00:14<00:02, 16.45it/s]Loading weights:  88%|########7 | 256/291 [00:15<00:02, 17.19it/s]Loading weights:  89%|########8 | 258/291 [00:15<00:02, 12.90it/s]Loading weights:  90%|######### | 263/291 [00:15<00:01, 19.03it/s]Loading weights:  91%|#########1| 266/291 [00:15<00:01, 14.63it/s]Loading weights:  92%|#########2| 269/291 [00:15<00:01, 15.69it/s]Loading weights:  94%|#########4| 274/291 [00:16<00:01, 16.44it/s]Loading weights:  95%|#########4| 276/291 [00:16<00:01, 12.79it/s]Loading weights:  97%|#########6| 281/291 [00:16<00:00, 18.04it/s]Loading weights:  98%|#########7| 284/291 [00:17<00:00, 14.18it/s]Loading weights:  99%|#########8| 287/291 [00:17<00:00, 15.14it/s]Loading weights: 100%|##########| 291/291 [00:17<00:00, 16.85it/s]
+base model VRAM 3.85/8.0 GB (peak 3.94)
+ToC: 1029 tokens, 'full'
+  50/200
+  100/200
+  150/200
+  200/200
+zeroshot+ToC: 846s |  VRAM 3.85/8.0 GB (peak 5.58)
+  50/200
+  100/200
+  150/200
+  200/200
+zeroshot-noToC: 185s |  VRAM 3.85/8.0 GB (peak 5.58)
+
+==============================================================
+ZERO-TRAINING vs EVERYTHING ELSE
+==============================================================
+system               |       R@1 |       R@3 |    nDCG@3 | hallucination_rate
+-----------------------------------------------------------------------------
+BM25                 |     83.50 |     96.50 |     91.44 |      0.00
+zeroshot+ToC         |     11.50 |     22.00 |     17.67 |      0.00
+zeroshot-noToC       |      2.50 |      5.50 |      4.33 |      0.00
+trained-BM25(0.5B)   |     83.50 |     96.50 |     91.44 |      0.00
+trained-STAIR(0.5B)  |     43.50 |     63.50 |     54.94 |      0.00
+trained-no-ToC(0.5B) |     42.50 |     60.50 |     52.87 |      0.00
+
+==============================================================
+SIGNIFICANCE (R@1)
+==============================================================
+comparison                     diff        p  verdict
+--------------------------------------------------------------
+BM25 vs zeroshot+ToC         +72.00   0.0001  SIGNIFICANT
+BM25 vs zeroshot-noToC       +81.00   0.0001  SIGNIFICANT
+zeroshot+ToC vs zeroshot-noToC    +9.00   0.0007  SIGNIFICANT
+
+saved results\whole-child_zeroshot.json
+=== chain complete ===

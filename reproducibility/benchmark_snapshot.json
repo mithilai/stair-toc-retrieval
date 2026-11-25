@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "dataset_repository": "SGK86/searchtome-subset",
+  "dataset_url": "https://huggingface.co/datasets/SGK86/searchtome-subset",
+  "token_estimator": "floor(len(render_full(sections)) / 3.8); not tokenizer counts",
+  "books": {
+    "digitalage": {
+      "leaf_sections": 172,
+      "estimated_toc_tokens": 1640,
+      "test_queries": 2301,
+      "test_orphans": 21,
+      "answerable_queries": 2280,
+      "source_files": [
+        {
+          "path": "gen/education/digitalage/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "7d83a2be90875ba876bf169d55e1424e31026dfd5a9422bd70e90aca40a72081"
+        },
+        {
+          "path": "gen/education/digitalage/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "db63866635af4f8998a07f10008ba48eaae298d25783a6fabbeaefa6a5b02ae0"
+        }
+      ]
+    },
+    "openmusictheory": {
+      "leaf_sections": 489,
+      "estimated_toc_tokens": 3072,
+      "test_queries": 3417,
+      "test_orphans": 173,
+      "answerable_queries": 3244,
+      "source_files": [
+        {
+          "path": "gen/education/openmusictheory/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "f5e483d4f650af6672754562f2937cff70e3325b2a1b1af6952f7881d30c55b4"
+        },
+        {
+          "path": "gen/education/openmusictheory/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "37c93863a749e82fde44303f99ac093e99f39dbb24cb49d28fbd0fa9f685cc30"
+        }
+      ]
+    },
+    "whole-child": {
+      "leaf_sections": 140,
+      "estimated_toc_tokens": 933,
+      "test_queries": 689,
+      "test_orphans": 79,
+      "answerable_queries": 610,
+      "source_files": [
+        {
+          "path": "gen/education/whole-child/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "11724481633a7607803f9ab0cf1e2cb2287b0f4ef76d5dad6a5dd8d405f6ff1b"
+        },
+        {
+          "path": "gen/education/whole-child/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "a04f6cf665b3644598074862caf095c47b4317dc002fb687aefcceb289c01065"
+        }
+      ]
+    },
+    "auralskills": {
+      "leaf_sections": 131,
+      "estimated_toc_tokens": 915,
+      "test_queries": 1067,
+      "test_orphans": 87,
+      "answerable_queries": 980,
+      "source_files": [
+        {
+          "path": "gen/social-sciences/auralskills/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "30d9334ef5197594ce5b9fb61d0bab12bdda7f4f754b1479e4fd96a44271c067"
+        },
+        {
+          "path": "gen/social-sciences/auralskills/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "dd094c3272199ac4cef7721db736893e74e5cc56491b95ddc2413d9335a3b037"
+        }
+      ]
+    },
+    "behavioralecon": {
+      "leaf_sections": 208,
+      "estimated_toc_tokens": 1518,
+      "test_queries": 1254,
+      "test_orphans": 21,
+      "answerable_queries": 1233,
+      "source_files": [
+        {
+          "path": "gen/social-sciences/behavioralecon/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "6ef703b6469f280a5a6bb02fb43bb8793695f1d30f9965fddd4f62abbec76187"
+        },
+        {
+          "path": "gen/social-sciences/behavioralecon/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "96b363c9f1226e8ce0536b99e062fd6798d7eb64ea175e3d0308eaef6e920674"
+        }
+      ]
+    },
+    "compgov": {
+      "leaf_sections": 336,
+      "estimated_toc_tokens": 2607,
+      "test_queries": 623,
+      "test_orphans": 136,
+      "answerable_queries": 487,
+      "source_files": [
+        {
+          "path": "gen/social-sciences/compgov/leaf_docs.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "361def8d7e7ed195c069e7b32e150ba5951156ab91e1a09c9aa2fa2f301295ff"
+        },
+        {
+          "path": "gen/social-sciences/compgov/questions.jsonl",
+          "revision": "8b6b90aa1fc3a48fb436eda1d471072b4aa3dbab",
+          "sha256": "f70f1e3a159fb6835342d08be606c3295d0b6067f3e7755c0a5af0cc5cb00069"
+        }
+      ]
+    }
+  },
+  "whole_child_valid_titles": [
+    "2-3 Year Milestones",
+    "7-8 Year Olds",
+    "Accident Prevention",
+    "After Birth",
+    "An Interesting Example of Cognitive Development: Lying",
+    "Autonomy vs. Shame/Doubt (Toddlerhood)",
+    "Birth",
+    "Biting",
+    "Bloom’s Taxonomy",
+    "Bowel and Bladder Control",
+    "Brain Cells: Neurons",
+    "Brain Development",
+    "Brain Development During Gestation",
+    "Brain Development in Infants and Toddlers",
+    "Brain Development in Preschool and School-Age Children",
+    "Brain Growth",
+    "Car Seat Safety",
+    "Cerebellum",
+    "Cerebrum",
+    "Child Abuse",
+    "Cognitive Growth",
+    "Conclusion",
+    "Concrete Operational Development",
+    "Contents",
+    "Continuity versus Discontinuity",
+    "Criticism of Psychosocial Theory",
+    "Criticism of Social Cognitive Theory",
+    "Criticisms of Behaviorism",
+    "Criticisms of Educational Theory",
+    "Criticisms of Humanistic Theory",
+    "Criticisms of Piaget’s Cognitive Development Theory",
+    "Criticisms of Sociocultural Theory",
+    "Cultural Perspectives",
+    "Development versus Growth",
+    "Domains of Development",
+    "Educational Implications",
+    "Educational Implications [2]",
+    "Educational Implications [3]",
+    "Educational Implications [4]",
+    "Educational Implications [5]",
+    "Educational Implications [6]",
+    "Educational Implications of Social Cognitive Theory",
+    "Emerging Themes",
+    "Emotional Development",
+    "Emotional Development [2]",
+    "Environmental Hazards",
+    "Factors that Impact Cognitive Development",
+    "Fine Motor Skills",
+    "First Sentences: Language Development in Toddlerhood",
+    "Formal Operational Development",
+    "Friendship in Early Childhood",
+    "Frontal Lobe",
+    "Gardner’s Theory of Multiple Intelligences",
+    "Gender",
+    "Gene-Linked Abnormalities",
+    "Generativity vs. Stagnation (Middle Adulthood)",
+    "Glossary",
+    "Grant Information",
+    "Gross Motor Skills",
+    "Gross and Fine Motor Skills",
+    "Growth in Height and Weight",
+    "Handedness",
+    "Height and Weight",
+    "Historical nations",
+    "History of Childhood",
+    "Hitting/Scratching and Temper Tantrums",
+    "How do these previously discussed perspectives shape the way we raise and educate children?",
+    "How is Child Development Studied?",
+    "Identity vs. Role-Confusion (Adolescence)",
+    "Imitation",
+    "Immunizations",
+    "Importance of Play",
+    "Inductive Reasoning",
+    "Industry vs. Inferiority (Elementary Years)",
+    "Infant Fine Motor Skills",
+    "Infant Gross Motor Skills",
+    "Initiative vs. Guilt (Preschool Years)",
+    "Integrity vs. Despair (Older Adulthood)",
+    "Intelligence",
+    "Intelligence [2]",
+    "Intimacy vs. Isolation (Early Adulthood)",
+    "Introduction",
+    "Language",
+    "Language & Literacy Development",
+    "Language [2]",
+    "Lecture slides and transcripts - The Whole Child",
+    "Literacy in Early Childhood Education",
+    "Media Attributions",
+    "Medical Conditions",
+    "Medulla Oblongata",
+    "Memory",
+    "Memory [2]",
+    "Midbrain",
+    "Mindset Theory",
+    "Moral Development",
+    "Nature versus Nurture",
+    "Nourishing the Young Child’s Cognitive Development",
+    "Nutrition",
+    "Occipital Lobe",
+    "Other Concerns",
+    "Other Concerns [2]",
+    "Overall Physical Growth",
+    "Parietal Lobe",
+    "Peer Influence",
+    "Periods of Development",
+    "Pons",
+    "Prenatal Testing for Genetic Abnormalities",
+    "Preoperational Development",
+    "Present-day nations and tribes",
+    "References",
+    "Risk Factors",
+    "Safety Concerns",
+    "School and Media Influences",
+    "Self-Regulation",
+    "Sensorimotor Development",
+    "Signs of Vision Problems",
+    "Sleep and Sleep Problems",
+    "Social Development in Preschool: Friendship",
+    "Social and Emotional Development in Infancy",
+    "Spinal Cord",
+    "Sports",
+    "Suggested readings",
+    "Teacher Influence",
+    "Temporal Lobe",
+    "The Emergence of Concrete Operational Thought",
+    "The Four Domains of Development",
+    "The Germinal Period",
+    "The Nine Intelligences",
+    "The Role of Genetics",
+    "Theories of Development",
+    "Theory of Mind",
+    "Theory of Multiple Intelligences",
+    "Toddler Property Laws Author Unknown",
+    "Trust vs. Mistrust (Infancy)",
+    "Universal versus Individual Development",
+    "Universals in Physical Development",
+    "Vygotsky vs. Piaget",
+    "Vygotsky’s Theory of Development",
+    "When Development Looks Atypical",
+    "Young Children’s Artistic Drawings"
+  ]
+}

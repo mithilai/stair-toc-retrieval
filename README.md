@@ -205,6 +205,16 @@ caught a false finding, and the cost comparison against BM25:
 If you run this at the paper's full training budget, I would genuinely like to
 know what you get. Open an issue.
 
+## Saved experiment records
+
+The selected evaluation/training logs, checkpoint JSON histories, and an offline
+verification command are described in [reproducibility/README.md](reproducibility/README.md).
+Run `python scripts/verify_results.py` to recompute the saved test metrics and
+paired tests without loading a model. The code-and-evidence archive contains
+the reusable research tools and selected experimental records. The manuscript,
+PDF, video, local packaging helpers, and machine-specific launch scripts are
+excluded from that archive.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

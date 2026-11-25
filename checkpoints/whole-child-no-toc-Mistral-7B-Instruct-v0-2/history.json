@@ -1,0 +1,37 @@
+{
+  "book": "whole-child",
+  "variant": "no-toc",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "with_toc": false,
+  "best_dev_R@1": 48.0,
+  "status": "running",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.373,
+      "dev_R@1": 32.0,
+      "dev_R@3": 48.0,
+      "dev_nDCG@3": 41.05,
+      "hallucination": 0.0,
+      "secs": 786
+    },
+    {
+      "epoch": 2,
+      "loss": 0.2935,
+      "dev_R@1": 40.0,
+      "dev_R@3": 48.0,
+      "dev_nDCG@3": 44.79,
+      "hallucination": 0.0,
+      "secs": 780
+    },
+    {
+      "epoch": 3,
+      "loss": 0.0701,
+      "dev_R@1": 48.0,
+      "dev_R@3": 66.0,
+      "dev_nDCG@3": 57.79,
+      "hallucination": 0.0,
+      "secs": 1595
+    }
+  ]
+}

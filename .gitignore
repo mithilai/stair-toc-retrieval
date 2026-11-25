@@ -10,7 +10,7 @@ books/
 
 # Datasets, caches, model weights
 data/
-checkpoints/
+checkpoints/*
 runs/
 outputs/
 *.safetensors
@@ -41,10 +41,24 @@ desktop.ini
 # Throwaway venv for CPU-only tooling, kept separate from .venv
 .venv-tools/
 
-# Training logs are kept — they are the record of what happened
-!logs/
-!logs/*.log
-!logs/*.jsonl
+# Selected experiment records are retained for reproducibility.
+# Other logs, adapters, optimizer states, and model weights stay local.
+logs/*
+!logs/whole-child-stair.log
+!logs/whole-child-stair.jsonl
+!logs/whole-child-no-toc.log
+!logs/whole-child-no-toc.jsonl
+!logs/whole-child-no-toc-Mistral-7B-Instruct-v0-2.log
+!logs/eval-whole-child.log
+!logs/chain.log
+!checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/
+checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/*
+!checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/history.json
+!checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/adapter_config.json
+!checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/
+checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/*
+!checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/history.json
+!checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/adapter_config.json
 
 # Build artifacts
 *.egg-info/
@@ -60,4 +74,11 @@ CLAUDE.md
 PROJECT.md
 RESUME.md
 blog/
-logs/
+
+# The manuscript and video are local only and must not enter release archives.
+/main.tex
+/main.pdf
+/video/
+
+# Local archive-building helper; not part of the reusable STAIR tools.
+/scripts/package_reproducibility.py

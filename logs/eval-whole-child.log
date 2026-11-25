@@ -1,0 +1,65 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [whole-child] 79 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 610 answerable queries
+published test split: 689, of which 79 (11.5%) have gold sections missing from the corpus
+
+BM25 done in 0s
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  20%|##        | 59/290 [00:00<00:00, 563.48it/s]Loading weights:  40%|####      | 116/290 [00:00<00:00, 511.97it/s]Loading weights:  58%|#####7    | 168/290 [00:00<00:00, 471.95it/s]Loading weights:  78%|#######8  | 227/290 [00:00<00:00, 489.30it/s]Loading weights:  97%|#########7| 282/290 [00:00<00:00, 504.18it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 515.79it/s]
+  50/610
+  100/610
+  150/610
+  200/610
+  250/610
+  300/610
+  350/610
+  400/610
+  450/610
+  500/610
+  550/610
+  600/610
+STAIR done in 721s |  VRAM 0.96/8.0 GB (peak 1.34)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  16%|#6        | 47/290 [00:00<00:00, 406.85it/s]Loading weights:  32%|###1      | 92/290 [00:00<00:00, 421.98it/s]Loading weights:  48%|####8     | 140/290 [00:00<00:00, 414.67it/s]Loading weights:  66%|######5   | 191/290 [00:00<00:00, 438.70it/s]Loading weights:  82%|########2 | 239/290 [00:00<00:00, 440.88it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 448.84it/s]
+  50/610
+  100/610
+  150/610
+  200/610
+  250/610
+  300/610
+  350/610
+  400/610
+  450/610
+  500/610
+  550/610
+  600/610
+no-ToC done in 515s |  VRAM 0.96/8.0 GB (peak 1.95)
+
+==============================================================
+ANSWERABLE ONLY
+==============================================================
+system |       R@1 |       R@3 |    nDCG@3 | hallucination_rate
+---------------------------------------------------------------
+BM25   |     78.36 |     93.28 |     87.30 |      0.00
+STAIR  |     15.90 |     35.25 |     27.18 |      0.00
+no-ToC |     16.89 |     30.49 |     24.93 |      0.00
+
+==============================================================
+SIGNIFICANCE — paired randomization test, R@1, 610 queries
+==============================================================
+
+@R@1:
+comparison                     diff        p  verdict
+--------------------------------------------------------------
+BM25 vs STAIR                +62.46   0.0001  SIGNIFICANT
+BM25 vs no-ToC               +61.48   0.0001  SIGNIFICANT
+STAIR vs no-ToC               -0.98   0.6307  not significant — consistent with noise
+
+@R@3:
+comparison                     diff        p  verdict
+--------------------------------------------------------------
+BM25 vs STAIR                +58.03   0.0001  SIGNIFICANT
+BM25 vs no-ToC               +62.79   0.0001  SIGNIFICANT
+STAIR vs no-ToC               +4.75   0.0153  SIGNIFICANT
+
+NOT comparable to the paper's SearchTome numbers.
+
+saved results/whole-child_test.json and whole-child_predictions.json

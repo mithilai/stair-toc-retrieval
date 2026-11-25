@@ -1,0 +1,37 @@
+
+======================================================================
+run started 2026-09-20 12:24:07  ->  logs\whole-child-stair.log
+args: {'book': 'whole-child', 'model': 'mistralai/Mistral-7B-Instruct-v0.2', 'no_toc': False, 'epochs': 4, 'lr': 0.0002, 'grad_accum': 8, 'max_len': 4096, 'dev_n': 50, 'patience': 3, 'four_bit': True, 'resume': False}
+======================================================================
+  [whole-child] 33 queries dropped: gold leaf_id absent from leaf_docs
+  [whole-child] 12 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 383 train | 142 dev
+variant: STAIR (ToC in prompt)
+LoRA: 41,943,040 trainable / 3,794,014,208 total (1.106%)
+ToC: 1029 tokens, 'full', lossless=True
+475 training examples (140 ingestion + 335 retrieval)
+max example length: 1111 tokens
+     epoch 1 step 100/475 loss 1.6853 (3.97s/ex)
+     epoch 1 step 200/475 loss 1.2235 (4.01s/ex)
+     epoch 1 step 300/475 loss 1.0491 (4.01s/ex)
+     epoch 1 step 400/475 loss 0.9022 (4.01s/ex)
+  epoch  1 loss  0.8451 | dev R@1  40.0 R@3  52.0 | halluc 0.0% | 2581s |  VRAM 4.50/8.0 GB (peak 6.22)
+     new best -> saved checkpoints\whole-child-stair
+     epoch 2 step 100/475 loss 0.3473 (4.02s/ex)
+     epoch 2 step 200/475 loss 0.3445 (3.99s/ex)
+     epoch 2 step 300/475 loss 0.3396 (4.03s/ex)
+     epoch 2 step 400/475 loss 0.3268 (4.05s/ex)
+  epoch  2 loss  0.3158 | dev R@1  40.0 R@3  62.0 | halluc 0.0% | 2698s |  VRAM 4.50/8.0 GB (peak 6.22)
+     epoch 3 step 100/475 loss 0.1134 (4.35s/ex)
+     epoch 3 step 200/475 loss 0.1109 (4.26s/ex)
+     epoch 3 step 300/475 loss 0.1112 (4.17s/ex)
+     epoch 3 step 400/475 loss 0.1025 (4.08s/ex)
+  epoch  3 loss  0.0969 | dev R@1  46.0 R@3  68.0 | halluc 0.0% | 2619s |  VRAM 4.50/8.0 GB (peak 6.22)
+     new best -> saved checkpoints\whole-child-stair
+     epoch 4 step 100/475 loss 0.0324 (4.05s/ex)
+     epoch 4 step 200/475 loss 0.0400 (4.00s/ex)
+     epoch 4 step 300/475 loss 0.0328 (4.01s/ex)
+     epoch 4 step 400/475 loss 0.0305 (4.02s/ex)
+  epoch  4 loss  0.0285 | dev R@1  40.0 R@3  70.0 | halluc 0.0% | 2578s |  VRAM 4.49/8.0 GB (peak 6.22)
+
+best dev R@1 46.0 | history -> checkpoints\whole-child-stair/history.json

@@ -1,0 +1,17 @@
+
+======================================================================
+run started 2026-09-20 16:43:46  ->  logs\whole-child-no-toc-Mistral-7B-Instruct-v0-2.log
+args: {'book': 'whole-child', 'model': 'mistralai/Mistral-7B-Instruct-v0.2', 'no_toc': True, 'epochs': 4, 'lr': 0.0002, 'grad_accum': 8, 'max_len': 4096, 'dev_n': 50, 'patience': 3, 'four_bit': True, 'resume': True}
+======================================================================
+  [whole-child] 33 queries dropped: gold leaf_id absent from leaf_docs
+  [whole-child] 12 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 383 train | 142 dev
+variant: no-ToC ablation
+LoRA: 41,943,040 trainable / 3,794,014,208 total (1.106%)
+476 training examples (140 ingestion + 336 retrieval)
+max example length: 3268 tokens
+resumed from epoch 3: best dev R@1 48.0, 3 epochs of history
+     epoch 4 step 100/476 loss 3.9464 (2.02s/ex)
+     epoch 4 step 200/476 loss 3.1410 (1.73s/ex)
+     epoch 4 step 300/476 loss 2.7045 (2.75s/ex)
+     epoch 4 step 400/476 loss 2.4617 (3.46s/ex)

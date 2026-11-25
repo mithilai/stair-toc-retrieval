@@ -1,0 +1,8 @@
+{"epoch": 1, "loss": 2.5611, "dev_R@1": 18.33, "dev_R@3": 33.33, "dev_nDCG@3": 26.49, "hallucination": 0.0, "secs": 339}
+{"epoch": 2, "loss": 0.6212, "dev_R@1": 25.0, "dev_R@3": 36.67, "dev_nDCG@3": 31.27, "hallucination": 0.0, "secs": 332}
+{"epoch": 3, "loss": 0.2214, "dev_R@1": 21.67, "dev_R@3": 36.67, "dev_nDCG@3": 30.26, "hallucination": 0.0, "secs": 337}
+{"epoch": 4, "loss": 0.0532, "dev_R@1": 21.67, "dev_R@3": 45.0, "dev_nDCG@3": 35.3, "hallucination": 0.0, "secs": 339}
+{"epoch": 5, "loss": 0.0133, "dev_R@1": 25.0, "dev_R@3": 46.67, "dev_nDCG@3": 37.8, "hallucination": 0.0, "secs": 338}
+{"epoch": 1, "loss": 1.373, "dev_R@1": 32.0, "dev_R@3": 48.0, "dev_nDCG@3": 41.05, "hallucination": 0.0, "secs": 786}
+{"epoch": 2, "loss": 0.2935, "dev_R@1": 40.0, "dev_R@3": 48.0, "dev_nDCG@3": 44.79, "hallucination": 0.0, "secs": 780}
+{"epoch": 3, "loss": 0.0701, "dev_R@1": 48.0, "dev_R@3": 66.0, "dev_nDCG@3": 57.79, "hallucination": 0.0, "secs": 1595}

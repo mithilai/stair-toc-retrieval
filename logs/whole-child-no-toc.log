@@ -1,0 +1,72 @@
+
+======================================================================
+run started 2026-09-20 10:04:44  ->  logs\whole-child-no-toc.log
+args: {'book': 'whole-child', 'model': 'Qwen/Qwen2.5-0.5B-Instruct', 'no_toc': True, 'epochs': 6, 'lr': 0.0002, 'grad_accum': 8, 'max_len': 4096, 'dev_n': 60, 'patience': 3, 'four_bit': False}
+======================================================================
+  [whole-child] 33 queries dropped: gold leaf_id absent from leaf_docs
+  [whole-child] 12 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 383 train | 142 dev
+variant: no-ToC ablation
+LoRA: 8,798,208 trainable / 502,830,976 total (1.750%)
+475 training examples (140 ingestion + 335 retrieval)
+max example length: 949 tokens
+     epoch 1 step 100/475 loss 5.9169 (0.61s/ex)
+     epoch 1 step 200/475 loss 4.0816 (0.59s/ex)
+     epoch 1 step 300/475 loss 3.3127 (0.58s/ex)
+     epoch 1 step 400/475 loss 2.8241 (0.59s/ex)
+  epoch  1 loss  2.5611 | dev R@1 18.33 R@3 33.33 | halluc 0.0% | 339s |  VRAM 1.07/8.0 GB (peak 2.72)
+     new best -> saved checkpoints\whole-child-no-toc
+     epoch 2 step 100/475 loss 0.7702 (0.59s/ex)
+     epoch 2 step 200/475 loss 0.7525 (0.58s/ex)
+     epoch 2 step 300/475 loss 0.6998 (0.59s/ex)
+     epoch 2 step 400/475 loss 0.6583 (0.59s/ex)
+  epoch  2 loss  0.6212 | dev R@1  25.0 R@3 36.67 | halluc 0.0% | 332s |  VRAM 1.07/8.0 GB (peak 2.72)
+     new best -> saved checkpoints\whole-child-no-toc
+     epoch 3 step 100/475 loss 0.2023 (0.57s/ex)
+     epoch 3 step 200/475 loss 0.2595 (0.58s/ex)
+     epoch 3 step 300/475 loss 0.2423 (0.58s/ex)
+     epoch 3 step 400/475 loss 0.2239 (0.58s/ex)
+  epoch  3 loss  0.2214 | dev R@1 21.67 R@3 36.67 | halluc 0.0% | 337s |  VRAM 1.07/8.0 GB (peak 2.72)
+     epoch 4 step 100/475 loss 0.0690 (0.58s/ex)
+     epoch 4 step 200/475 loss 0.0638 (0.58s/ex)
+     epoch 4 step 300/475 loss 0.0613 (0.58s/ex)
+     epoch 4 step 400/475 loss 0.0579 (0.58s/ex)
+  epoch  4 loss  0.0532 | dev R@1 21.67 R@3  45.0 | halluc 0.0% | 339s |  VRAM 1.07/8.0 GB (peak 2.72)
+     epoch 5 step 100/475 loss 0.0188 (0.59s/ex)
+     epoch 5 step 200/475 loss 0.0157 (0.59s/ex)
+     epoch 5 step 300/475 loss 0.0161 (0.60s/ex)
+     epoch 5 step 400/475 loss 0.0146 (0.59s/ex)
+  epoch  5 loss  0.0133 | dev R@1  25.0 R@3 46.67 | halluc 0.0% | 338s |  VRAM 1.07/8.0 GB (peak 2.72)
+  early stop (no dev R@1 gain in 3 epochs)
+
+best dev R@1 25.0 | history -> checkpoints\whole-child-no-toc/history.json
+
+======================================================================
+run started 2026-09-20 15:35:26  ->  logs\whole-child-no-toc.log
+args: {'book': 'whole-child', 'model': 'mistralai/Mistral-7B-Instruct-v0.2', 'no_toc': True, 'epochs': 4, 'lr': 0.0002, 'grad_accum': 8, 'max_len': 4096, 'dev_n': 50, 'patience': 3, 'four_bit': True, 'resume': False}
+======================================================================
+  [whole-child] 33 queries dropped: gold leaf_id absent from leaf_docs
+  [whole-child] 12 queries dropped: gold leaf_id absent from leaf_docs
+book whole-child | 140 leaves | 383 train | 142 dev
+variant: no-ToC ablation
+LoRA: 41,943,040 trainable / 3,794,014,208 total (1.106%)
+475 training examples (140 ingestion + 335 retrieval)
+max example length: 1101 tokens
+     epoch 1 step 100/475 loss 3.1117 (1.41s/ex)
+     epoch 1 step 200/475 loss 2.1914 (1.37s/ex)
+     epoch 1 step 300/475 loss 1.7754 (1.42s/ex)
+     epoch 1 step 400/475 loss 1.5126 (1.41s/ex)
+  epoch  1 loss  1.3730 | dev R@1  32.0 R@3  48.0 | halluc 0.0% | 786s |  VRAM 4.50/8.0 GB (peak 5.47)
+     new best -> saved checkpoints\whole-child-no-toc
+     epoch 2 step 100/475 loss 0.3461 (1.37s/ex)
+     epoch 2 step 200/475 loss 0.3446 (1.39s/ex)
+     epoch 2 step 300/475 loss 0.3413 (1.40s/ex)
+     epoch 2 step 400/475 loss 0.3101 (1.40s/ex)
+  epoch  2 loss  0.2935 | dev R@1  40.0 R@3  48.0 | halluc 0.0% | 780s |  VRAM 4.49/8.0 GB (peak 5.47)
+     new best -> saved checkpoints\whole-child-no-toc
+     epoch 3 step 100/475 loss 0.0655 (1.48s/ex)
+     epoch 3 step 200/475 loss 0.0780 (1.41s/ex)
+     epoch 3 step 300/475 loss 0.0796 (1.40s/ex)
+     epoch 3 step 400/475 loss 0.0712 (1.41s/ex)
+  epoch  3 loss  0.0701 | dev R@1  48.0 R@3  66.0 | halluc 0.0% | 1595s |  VRAM 4.49/8.0 GB (peak 5.47)
+     new best -> saved checkpoints\whole-child-no-toc

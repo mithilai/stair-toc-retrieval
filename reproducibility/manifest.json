@@ -1,0 +1,299 @@
+{
+  "schema_version": 2,
+  "repository": "https://github.com/mithilai/stair-toc-retrieval",
+  "base_commit": "15c48122bcea07d6f7ae2aa3041336cf73da7d6a",
+  "snapshot": "Working files as packaged; may include changes after base_commit",
+  "scope": "Code and experiment evidence from the community SearchTome subset",
+  "manuscript_included": false,
+  "video_included": false,
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 137,
+      "normalization": "lf",
+      "sha256": "438eaa628fffd7244e4e829b44bed306f4c71b4c7e06191c2efa7d04c0f417f5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1955,
+      "normalization": "lf",
+      "sha256": "5136087212889ae5d2c9f218c673049b45a6b883a76ae886ecda327b068f9758"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1069,
+      "normalization": "lf",
+      "sha256": "0bb953982ab216a9c84da4fa85c0560bc1a8550fa33fba9b0bef2931b4e5255a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11609,
+      "normalization": "lf",
+      "sha256": "b81b2f97a9efa0e847211379c4da6e1d1785fdb08c4262c31171c76bcc8c510c"
+    },
+    {
+      "path": "checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/adapter_config.json",
+      "bytes": 1190,
+      "normalization": "lf",
+      "sha256": "9fba21d17818b58380e76cbf1952851adcac5efaeecd5342314ae11fc9ffc66d"
+    },
+    {
+      "path": "checkpoints/whole-child-no-toc-Mistral-7B-Instruct-v0-2/history.json",
+      "bytes": 702,
+      "normalization": "lf",
+      "sha256": "2563c37a9ebb48c8461f27d31b364b5b7fdf668c269ca6708e4e26293781b469"
+    },
+    {
+      "path": "checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/adapter_config.json",
+      "bytes": 1190,
+      "normalization": "lf",
+      "sha256": "8f0971a8bd03a52336b8c319a6a6eed1b9074c7e5c22f45a7bf6724cc943edb9"
+    },
+    {
+      "path": "checkpoints/whole-child-stair-Mistral-7B-Instruct-v0-2/history.json",
+      "bytes": 853,
+      "normalization": "lf",
+      "sha256": "395ca9f726d405e9c46e2ad1972bd137f285f7403282337ec203795ef7fb3b7d"
+    },
+    {
+      "path": "docs/00-hero.png",
+      "bytes": 2064596,
+      "normalization": "none",
+      "sha256": "c64fdd7f1cd3c2dcd813bd1013f9e464e282e47253e6afc3aa38c1f6eea6cab7"
+    },
+    {
+      "path": "docs/01-rag-vs-stair.png",
+      "bytes": 1412212,
+      "normalization": "none",
+      "sha256": "aaad4af6ebe87045300713278c64fa2d028e345094121f4b116ccb21dd4287a9"
+    },
+    {
+      "path": "docs/02-stair-architecture.png",
+      "bytes": 1491292,
+      "normalization": "none",
+      "sha256": "1592f30e7c9e19498f0136fdb6198e69678a5ada78cd972a813af863ce7773c7"
+    },
+    {
+      "path": "docs/03-results.png",
+      "bytes": 1175831,
+      "normalization": "none",
+      "sha256": "768e8df4d0fa70fc6906c4f16fc1a8754ef4973cdfc5b4cab50cebea5d2c44df"
+    },
+    {
+      "path": "docs/04-toc-redundancy.png",
+      "bytes": 1085205,
+      "normalization": "none",
+      "sha256": "abd836a3acf79345df4143e35262d0b21aa0fd33330c38533a67676a9cd4d737"
+    },
+    {
+      "path": "logs/chain.log",
+      "bytes": 19394,
+      "normalization": "lf",
+      "sha256": "6b17b54099c629eeb74dbabbaea8e9446ec9623b447d0411dbebbb7d78c573de"
+    },
+    {
+      "path": "logs/eval-whole-child.log",
+      "bytes": 3012,
+      "normalization": "lf",
+      "sha256": "3046ef5f0a4bf667181bcca5c5b2ab6b19c2f0f14d1d96d11147f29d34af9b86"
+    },
+    {
+      "path": "logs/whole-child-no-toc-Mistral-7B-Instruct-v0-2.log",
+      "bytes": 1069,
+      "normalization": "lf",
+      "sha256": "fedd864248f57fdd403bac0f600c034ce2f741a5049cd4b1a448ee4d1f0e6443"
+    },
+    {
+      "path": "logs/whole-child-no-toc.jsonl",
+      "bytes": 957,
+      "normalization": "lf",
+      "sha256": "dfa4d5c9b64a64b96125abbc1f1a578662165d5654f80237bcd0ad746718cc7b"
+    },
+    {
+      "path": "logs/whole-child-no-toc.log",
+      "bytes": 4330,
+      "normalization": "lf",
+      "sha256": "7f9cb2fee188e6ae2d20042f1128d4452cccc861fa55184d8df7d13246733c35"
+    },
+    {
+      "path": "logs/whole-child-stair.jsonl",
+      "bytes": 480,
+      "normalization": "lf",
+      "sha256": "956905a8e5034765d3bd248781325c5c30d7748e0432d127c76e9755baf9469c"
+    },
+    {
+      "path": "logs/whole-child-stair.log",
+      "bytes": 2215,
+      "normalization": "lf",
+      "sha256": "60a92d3db1c40deda7f7cb5e74880cf9c7f76345635c2b4e1608a5ff11a3b595"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 840,
+      "normalization": "lf",
+      "sha256": "99db32056d43faffc1fdab780ab4ee4f38ebbf1b4500a9381442b01d66204606"
+    },
+    {
+      "path": "reproducibility/README.md",
+      "bytes": 5640,
+      "normalization": "lf",
+      "sha256": "1012d243891f4f72f8636d77d484fb0250d833296fd13655dfd5798adbcb8ebe"
+    },
+    {
+      "path": "reproducibility/benchmark_snapshot.json",
+      "bytes": 8980,
+      "normalization": "lf",
+      "sha256": "5d0ef34a91161ba469c32ef0b8a30b80aea76288d8af1c6b7e0644dd6e1aafff"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 568,
+      "normalization": "lf",
+      "sha256": "4c4a4187b32f846ad7739bc7a682a8d755ddb5a8464f2aca9ac023d423c9a272"
+    },
+    {
+      "path": "results/bm25_subset.json",
+      "bytes": 1865,
+      "normalization": "lf",
+      "sha256": "5e6a8f2402145395d9744d8c89e054f767cd973a5a19ac002cd2eb9ac7b31564"
+    },
+    {
+      "path": "results/whole-child_predictions.json",
+      "bytes": 266617,
+      "normalization": "lf",
+      "sha256": "51d8df14aa140c6c195c552398a7e699e77385b4b35aa17598d8a129cff50507"
+    },
+    {
+      "path": "results/whole-child_test.json",
+      "bytes": 2768,
+      "normalization": "lf",
+      "sha256": "45583493da438016c806bb5a9d9ad019b7d5029297f7246ea927cd6f59e29461"
+    },
+    {
+      "path": "results/whole-child_zeroshot.json",
+      "bytes": 1139,
+      "normalization": "lf",
+      "sha256": "96d4ce7e285a27d0f7839c7dd9ae3e19929fecf157c5fa2b645c2af4fe70570b"
+    },
+    {
+      "path": "scripts/audit_books.py",
+      "bytes": 2157,
+      "normalization": "lf",
+      "sha256": "ec89c30024a1ad5ec6e5346ad0b44b8544cbc02e8343ad858af3b7a0d7b2848d"
+    },
+    {
+      "path": "scripts/build_corpus.py",
+      "bytes": 3194,
+      "normalization": "lf",
+      "sha256": "19aea96e3e4128465936ab686412a9f1a8dce3c0bff614e3623fd0b6f70d77d2"
+    },
+    {
+      "path": "scripts/evaluate_run.py",
+      "bytes": 5614,
+      "normalization": "lf",
+      "sha256": "48193fbfc4456cf555b6c221b5c7c94e8120b798cb3dee328df1f81dca834294"
+    },
+    {
+      "path": "scripts/generate_queries.py",
+      "bytes": 4127,
+      "normalization": "lf",
+      "sha256": "07e29260ac2851b3adcabaea61507d2ebcf3c98fb4d749cdf3910e9b1f03d012"
+    },
+    {
+      "path": "scripts/train_stair.py",
+      "bytes": 10771,
+      "normalization": "lf",
+      "sha256": "0d85ee2f4f9bf73f5fe81586b1b9ed950bdd6533be77df70aeabadfa32191147"
+    },
+    {
+      "path": "scripts/verify_results.py",
+      "bytes": 6405,
+      "normalization": "lf",
+      "sha256": "b1e4f5254d493a388b49115dd098be7932c652e372a1ef3ab05595374d86a68f"
+    },
+    {
+      "path": "scripts/zeroshot_test.py",
+      "bytes": 4740,
+      "normalization": "lf",
+      "sha256": "d74521e71ad5f914292b979d66ad03b2746cdd5770000b24bb219108605b480b"
+    },
+    {
+      "path": "src/stair/__init__.py",
+      "bytes": 76,
+      "normalization": "lf",
+      "sha256": "4339649d9eacdd1a4c3a06bd1eddac8ce9a1c29cf219bfba72fb2ab769d4d9a0"
+    },
+    {
+      "path": "src/stair/baselines.py",
+      "bytes": 2078,
+      "normalization": "lf",
+      "sha256": "9dab08b97360c649b27d98ab7353084d4efdf48d84ec04830b395af171662264"
+    },
+    {
+      "path": "src/stair/constrained.py",
+      "bytes": 3501,
+      "normalization": "lf",
+      "sha256": "816f347aac2f516e56286f073ea38695f8defefd3ff7eac555d60c7fbcbf53c8"
+    },
+    {
+      "path": "src/stair/corpus.py",
+      "bytes": 6085,
+      "normalization": "lf",
+      "sha256": "2e42c5cdbc52347857b817314fc313a8477b9fee01f3916847ad1b3f9194ed00"
+    },
+    {
+      "path": "src/stair/data.py",
+      "bytes": 4867,
+      "normalization": "lf",
+      "sha256": "54b3097fe05d376d48a7fca92c92e4f7b580d7a2548cd5118412a5d208c63e31"
+    },
+    {
+      "path": "src/stair/evaluate.py",
+      "bytes": 2855,
+      "normalization": "lf",
+      "sha256": "64e20768914deddb3bc52c2de9ab49ad5ba9267f71a7d503669bab4d5ed0710c"
+    },
+    {
+      "path": "src/stair/model.py",
+      "bytes": 4955,
+      "normalization": "lf",
+      "sha256": "13e29929166bffaea97e0086c0a19b02b16ef732e5f5a17e6e02aee144bf4e30"
+    },
+    {
+      "path": "src/stair/prompts.py",
+      "bytes": 7922,
+      "normalization": "lf",
+      "sha256": "16b5e2a1504f223d91cdb4749a4e2b398c2bf0b1e22ce677926b4d0f0ffc5078"
+    },
+    {
+      "path": "src/stair/querygen.py",
+      "bytes": 15924,
+      "normalization": "lf",
+      "sha256": "2bd40c69f7a8a1da7791367b25bc59b42b008b7efbd8298016b91fb548b58dd6"
+    },
+    {
+      "path": "src/stair/significance.py",
+      "bytes": 4006,
+      "normalization": "lf",
+      "sha256": "741245361eec43756b6d9a35b147f84e49791359f9fb2b41b1995a4403fbc2f4"
+    },
+    {
+      "path": "src/stair/toc.py",
+      "bytes": 4224,
+      "normalization": "lf",
+      "sha256": "cba8c949346569cb9ba1099af1c00114c789304fee1294fceceb20962610a546"
+    },
+    {
+      "path": "src/stair/train.py",
+      "bytes": 5241,
+      "normalization": "lf",
+      "sha256": "bca24a5da445b007a85520579a9c4f193ee052a9f53da5384a4e40c52155351a"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 9672,
+      "normalization": "lf",
+      "sha256": "008e90eb8e8dd552e3ef09ae680ab9619c2a53946145eb565ac308bcbf9a8019"
+    }
+  ]
+}
